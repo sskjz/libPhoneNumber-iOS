@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
 libPhoneNumberShortNumber for iOS
 iOS library for implementing libPhoneNumber features on short numbers. 
 DESC
-  s.homepage     = "https://github.com/iziz/libPhoneNumber-iOS.git"
+  s.homepage     = "https://github.com/sskjz/libPhoneNumber-iOS.git"
   s.license      = 'Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)'
   s.authors      = { "rastaarh" => "rastaar@google.com", "paween" => "paween@google.com"}
-  s.source       = { :git => "https://github.com/iziz/libPhoneNumber-iOS.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/sskjz/libPhoneNumber-iOS.git", :tag => s.version.to_s }
   s.libraries      = 'z'
   s.ios.deployment_target = "11.0"
   s.osx.deployment_target = "10.9"

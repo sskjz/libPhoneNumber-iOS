@@ -105,6 +105,10 @@ static NSString *const preparedStatement = @"WITH recursive count(x)"
 
 - (int)resetSelectStatement {
   sqlite3_reset(_selectStatement);
+  // Note: 兼容 WCDBOptimizedSQLCipher 对 sqlite3_clear_bindings 空指针解引用崩溃
+  if (!_selectStatement) {
+    return SQLITE_OK;
+  }
   return sqlite3_clear_bindings(_selectStatement);
 }
 
